@@ -1,13 +1,122 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.header {
+  background-color: #f4b400;
+  display: flex;
+  padding: 20px;
 }
+
+.header h1 {
+  color: white;
+  margin: auto 0;
+}
+
+footer {
+  color: gray;
+  font-weight: 800;
+  text-align: center;
+  position: fixed;
+  bottom: 5px;
+  width: 100%;
+}
+
+.main_note {
+  width: 500px;
+  border-radius: 8px;
+  box-shadow: 1px 1px 10px rgb(213, 209, 209);
+  margin: 20px auto;
+  padding: 15px 10px 5px 10px;
+
+}
+
+.main_note input {
+  display: block;
+  width: 100%;
+  padding: 0 20px;
+  outline: none;
+  border: none;
+  font-style: bold;
+  color: gray;
+}
+
+.main_note input,
+.main_note input::placeholder {
+  font-size: larger;
+  font-weight: bold;
+}
+
+.main_note textarea {
+  width: 100%;
+  height: 100%;
+  padding: 20px 20px;
+  border: none;
+  outline: none;
+  color: gray;
+}
+
+.main_note textarea,
+.main_note textarea::placeholder {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.main_note .btn {
+  background-color: white;
+  color: #f4b400;
+  position: relative;
+  top: 30px;
+  left: 420px;
+}
+
+.main_note .btn:hover {
+  background-color: #f4b400;
+  color: white;
+  position: relative;
+  top: 30px;
+  left: 420px;
+}
+
+.note {
+  width: 250px;
+  height: 150px;
+  border-radius: 8px;
+  box-shadow: 1px 1px 10px rgb(213, 209, 209);
+  padding: 10px;
+  margin: 50px 10px 10px 10px;
+}
+
+.note h1 {
+  font-size: larger;
+}
+
+.note p {
+  font-weight: 600;
+  color: rgb(95, 89, 89);
+  overflow: hidden;
+  /* text-overflow: wrap; */
+}
+
+ .btnClass .delete {
+  text-align: end;
+  margin: 10px 0;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  top: 145px;
+  right: 55px;
+  color: #f4b400;
+}
+
+.deleteIcon {
+  font-size: 80px;
+}
+
+.noteHolder {
+  display: flex;
+  flex-wrap: wrap;
+}
+
